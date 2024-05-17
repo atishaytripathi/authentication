@@ -15,9 +15,9 @@ This project is a full-stack authentication system built with React for the fron
 
 ## Tech Stack
 
-- **Frontend**: React, Axios, React Router
+- **Frontend**: React, React Router
 - **Backend**: Node.js, Express, MongoDB (with Mongoose for ORM)
-- **Authentication**: JSON Web Tokens (JWT), bcrypt
+- **Authentication**: JSON Web Tokens (JWT), Joi
 - **Environment**: Node.js, npm, dotenv
 
 ## Getting Started
@@ -32,8 +32,8 @@ This project is a full-stack authentication system built with React for the fron
 
 1. **Clone the repository**:
    ```sh
-   git clone https://github.com/your-username/authentication-project.git
-   cd authentication-project
+   git clone [https://github.com/atishaytripathi/authentication.git](https://github.com/atishaytripathi/authentication.git)
+   cd authentication
    ```
 
 2. **Install backend dependencies**:
@@ -46,15 +46,6 @@ This project is a full-stack authentication system built with React for the fron
    ```sh
    cd ../frontend
    npm install
-   ```
-
-4. **Set up environment variables**:
-
-   Create a `.env` file in the `backend` directory and add the following variables:
-   ```
-   PORT=5000
-   MONGO_URI=your_mongodb_connection_string
-   JWT_SECRET=your_jwt_secret_key
    ```
 
 ### Running the Application
@@ -75,51 +66,11 @@ This project is a full-stack authentication system built with React for the fron
 
    The frontend development server will run on `http://localhost:3000`.
 
-### Directory Structure
-
-```
-authentication-project/
-│
-├── backend/
-│   ├── config/
-│   │   └── db.js
-│   ├── controllers/
-│   │   └── authController.js
-│   ├── middleware/
-│   │   └── authMiddleware.js
-│   ├── models/
-│   │   └── User.js
-│   ├── routes/
-│   │   └── authRoutes.js
-│   ├── .env
-│   ├── server.js
-│   └── package.json
-│
-└── frontend/
-    ├── public/
-    ├── src/
-    │   ├── components/
-    │   │   ├── LoginForm.js
-    │   │   ├── RegisterForm.js
-    │   │   └── ProtectedRoute.js
-    │   ├── contexts/
-    │   │   └── AuthContext.js
-    │   ├── pages/
-    │   │   ├── Home.js
-    │   │   ├── Login.js
-    │   │   └── Register.js
-    │   ├── services/
-    │   │   └── authService.js
-    │   ├── App.js
-    │   ├── index.js
-    │   └── package.json
-```
 
 ### API Endpoints
 
-- **POST /api/auth/register**: Register a new user
-- **POST /api/auth/login**: Login a user
-- **GET /api/auth/protected**: Access a protected route (requires JWT)
+- **POST /api/signup**: Register a new user
+- **POST /api/signin**: Login a user
 
 ### License
 
@@ -131,7 +82,7 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 
 ### Contact
 
-For any questions or issues, please contact [your-email@example.com](mailto:your-email@example.com).
+For any questions or issues, please contact [atishay1922@gmail.com](mailto:atishay1922@gmail.com).
 
 ---
 
