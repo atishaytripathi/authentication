@@ -72,10 +72,6 @@ This project is a full-stack authentication system built with React for the fron
 - **POST /api/signup**: Register a new user
 - **POST /api/signin**: Login a user
 
-### License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ### Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request for any changes.
